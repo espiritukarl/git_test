@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 2rem;
+}
+
+img {
+    display: none;
+    height: 500px;
+    width: 800px;
+}
+
+.current-photo {
+    display: block;
+}
+
+.prev, .next {
+    font-size: 1.5rem;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(250, 235, 215, 0.418);
+    transform: scale(1.05);
+}
+
+.dots {
+    position: absolute;
+    bottom: 20vh;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: rgb(142, 250, 156);
+    cursor: pointer;
+}
+
+.dot:hover, .current-dot {
+    background-color: rgb(29, 92, 33);
+}
